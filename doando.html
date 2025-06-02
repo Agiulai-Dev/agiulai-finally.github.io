@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" type="text/css" href="estilo.css">
+         <div style="display: flex; align-items: center;">
+       <img src="gatinhotransparente.png" width="300" height="200">
+        <p style="font-size: 25px;">GatinhosRonRonantes ------------------------------------------------<br>Resgatamos gatinhos e espalhamos amor em forma de ronrons!</p>
+       </div>
+    <title>Cadastro de Gatinhos</title>
+<body>
+    <h1>Cadastro de Gatinhos</h1>
+    <table border="3">
+        <tr>
+            <td rowspan="3" colspan="2"><label>Foto:</label>
+            <input type="file" name="foto" accept="image/*"></td>
+        <td><form action="cadastro.php" method="post">
+            <label>Nome do gatinho:</label>
+            <input type="text" name="nome" required></td>
+            </tr>
+            <tr>
+           <td><label>Idade:</label><br>
+           <input type="number" name="idade" required></td>
+            </tr>
+            <tr><td><label>Descrição:</label>
+             <textarea name="descricao"></textarea></td>
+             </tr>
+             <table border="3"><tr>
+        <td><a href="tabeladigatos.html"><input type="button" value="voltar"></a></td>
+        <td><input type="reset" value="Limpar"></td>
+        <td><button onclick="alert('Iremos cadastrar o gatinho para que ele receba um lar! Muito obrigado.')">cadastrar</button></td>
+             </tr></table>
+    </form>
+</body>
+</html>
